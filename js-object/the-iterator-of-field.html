@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const scriptNo = 1
+      let obj1 = {
+        name: "zhq",
+      }
+      if (scriptNo === 1) {
+        // 使用 for...in 遍历对象的属性
+        for (const key in obj1) {
+          if (Object.prototype.hasOwnProperty.call(obj1, key)) {
+            const element = obj1[key]
+            console.log(`key:${key}, value:${element}`)
+          }
+        }
+      } else if (scriptNo === 2) {
+      }
+    </script>
+  </body>
+</html>
